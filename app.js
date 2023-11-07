@@ -15,6 +15,6 @@ app.get('/loggerTest', (req, res) => {
   res.send('Logger test')
 })
 
-app.listen(8080, () => {
+app.listen(process.env.PORT, () => {
   console.log('Listening on port http://localhost:8080')
 })
